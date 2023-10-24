@@ -12,12 +12,19 @@ const onClickAdd = () => {
   const li = document.createElement("li");
   li.innerText = inputText;
 
+  // 完了・削除ボタン追加
+  const completeButton = document.createElement("button");
+  completeButton.innertext = "完了";
+  const deleteButton = document.createElement("button");
+  deleteButton.innertext = "削除";
+
   // divタグの子要素に各要素を設定
   div.appendChild(li);
+  div.appendChild(completeButton);
+  div.appendChild(deleteButton);
 
   // 未完了リストに追加
   document.getElementById("incomplete-list").appendChild(div);
-  
 };
 
 document
