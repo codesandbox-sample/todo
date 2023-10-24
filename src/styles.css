@@ -21,6 +21,10 @@ button:hover {
   cursor: pointer;
 }
 
+li {
+  margin-right: 8px;
+}
+
 .input-area {
   background-color: #c1ffff;
   width: 400px;
@@ -29,6 +33,7 @@ button:hover {
   margin: 8px;
   border-radius: 8px;
 }
+
 .inconplete-area {
   background-color: #c6ffe2;
   width: 400px;
@@ -37,6 +42,7 @@ button:hover {
   margin: 8px;
   border-radius: 8px;
 }
+
 .conplete-area {
   background-color: #ffffe0;
   width: 400px;
@@ -44,4 +50,17 @@ button:hover {
   padding: 8px;
   margin: 8px;
   border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  color: #666;
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
 }
