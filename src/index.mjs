@@ -14,9 +14,16 @@ const onClickAdd = () => {
 
   // 完了・削除ボタン追加
   const completeButton = document.createElement("button");
-  completeButton.innertext = "完了";
+  completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => {
+    alert("完了");
+  });
+
   const deleteButton = document.createElement("button");
-  deleteButton.innertext = "削除";
+  deleteButton.innerText = "削除";
+  deleteButton.addEventListener("click", () => {
+    alert("削除");
+  });
 
   // divタグの子要素に各要素を設定
   div.appendChild(li);
