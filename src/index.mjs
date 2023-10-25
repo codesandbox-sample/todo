@@ -39,10 +39,10 @@ const onClickAdd = () => {
       const li = document.createElement("li");
       li.innerText = text;
       // divタグの子要素に各要素を設定
-      addTarget.appendChild(li);
-      addTarget.appendChild(completeButton);
-      addTarget.appendChild(deleteButton);
-      document.getElementById("incomplete-list").appendChild(addTarget);
+      moveTarget.appendChild(li);
+      moveTarget.appendChild(completeButton);
+      moveTarget.appendChild(deleteButton);
+      document.getElementById("incomplete-list").appendChild(moveTarget);
 
       deleteFromList("complete-list", backButton.parentNode);
     });
