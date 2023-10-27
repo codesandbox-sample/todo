@@ -6,7 +6,6 @@ const onClickAdd = () => {
   document.getElementById("add-text").value = "";
 
   createIncompleteList(inputText);
-
 };
 
 // リストから指定の要素を削除
@@ -53,7 +52,7 @@ const createIncompleteList = (text) => {
       deleteFromList("complete-list", backButton.parentNode);
 
       // Todo内容テキストを取得
-      const text = addTarget.firstElementChild.innerText;
+      const text = backButton.parentNode.firstElementChild.innerText;
 
       createIncompleteList(text);
     });
@@ -70,7 +69,7 @@ const createIncompleteList = (text) => {
     addTarget.appendChild(deleteButton1);
 
     // 完了リストに追加
-    document.getElementById("complete-list").appendChild(addTarget);
+    document.getElementById("complete-list").prepend(addTarget);
   });
 
   // 削除ボタン追加
@@ -90,7 +89,6 @@ const createIncompleteList = (text) => {
 
   // 未完了リストに追加
   document.getElementById("incomplete-list").appendChild(div);
-  
 };
 
 document
