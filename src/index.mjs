@@ -34,7 +34,7 @@ const createIncompleteList = (text) => {
 
     // 完了リストに追加する要素
     const addTarget = completeButton.parentNode;
-    // Todo内容テキストを取得
+    // ToDo内容テキストを取得
     const text = addTarget.firstElementChild.innerText;
     // div以下を初期化
     addTarget.textContent = null;
@@ -51,7 +51,7 @@ const createIncompleteList = (text) => {
       // document.getElementById("incomplete-list").removeChild(delteTarget);
       deleteFromList("complete-list", backButton.parentNode);
 
-      // Todo内容テキストを取得
+      // ToDo内容テキストを取得
       const text = backButton.parentNode.firstElementChild.innerText;
 
       createIncompleteList(text);
